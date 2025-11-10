@@ -9,10 +9,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {services.map((s) => (
-        <ServiceCard key={s.name} {...s} />
-      ))}
-    </section>
+    <div className="min-h-screen flex flex-col">
+      <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {services.map((s) => (
+          <ServiceCard key={s.name} {...s} />
+        ))}
+      </section>
+    </div>
   );
 }
