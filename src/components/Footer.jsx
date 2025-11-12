@@ -8,8 +8,8 @@ export default function Footer() {
         
         {/* Left Section */}
         <div>
-          <h2 className="text-3xl text-blush mb-3">The Lash Burrow</h2>
-          <p className="text-beige leading-relaxed">
+          <h2 className="text-4xl text-ivory font-caveat mb-3">The Lash Burrow</h2>
+          <p className="text-ivory leading-relaxed">
             210 N 200 W <br />
             Logan, UT 84321
           </p>
@@ -17,19 +17,19 @@ export default function Footer() {
             href="https://www.google.com/maps/dir/?api=1&destination=210+N+200+W,+Logan,+UT+84321"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-2 text-moss hover:text-blush underline transition-colors"
+            className="block mt-2 text-ivory hover:text-blush underline transition-colors"
           >
             Get Directions
           </Link>
-          <p className="mt-4 text-beige">
+          <p className="mt-4 text-ivory">
             <span className="font-semibold text-ivory">Phone:</span> (636) 222-0862
           </p>
         </div>
 
         {/* Center Section */}
         <div>
-          <h3 className="text-3xl text-blush mb-3">Hours</h3>
-          <ul className="space-y-2 text-beige">
+          <h3 className="text-4xl text-ivory font-caveat mb-3">Hours</h3>
+          <ul className="space-y-2 text-ivory">
             <li>
               <span>Saturday:</span>
               <span className="ml-6">8am – 8pm</span>
@@ -39,25 +39,25 @@ export default function Footer() {
 
         {/* Right Section */}
         <div>
-          <h3 className="text-3xl text-blush mb-3">Resources</h3>
-          <ul className="space-y-2 text-beige">
+          <h3 className="text-4xl text-ivory font-caveat mb-3">Resources</h3>
+          <ul className="space-y-2 text-ivory">
             <li>
-              <Link href="/booking" className="hover:text-blush transition-colors">
+              <Link href="/booking" className="hover:text-ivory transition-colors">
                 Book an Appointment
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-blush transition-colors">
+              <Link href="/services" className="hover:text-ivory transition-colors">
                 Services &amp; Pricing
               </Link>
             </li>
             <li>
-              <Link href="/boutique" className="hover:text-blush transition-colors">
+              <Link href="/boutique" className="hover:text-ivory transition-colors">
                 Shop Boutique
               </Link>
             </li>
             <li>
-              <Link href="/giving" className="hover:text-blush transition-colors">
+              <Link href="/giving" className="hover:text-ivory transition-colors">
                 Giving Back
               </Link>
             </li>
@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-12 text-center text-sm text-beige border-t border-moss/20 pt-6">
+      <div className="mt-12 text-center text-sm text-ivory border-t border-moss/20 pt-6">
         © {new Date().getFullYear()} The Lash Burrow — All Rights Reserved
       </div>
     </footer>

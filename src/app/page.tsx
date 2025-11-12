@@ -15,10 +15,9 @@ export default function Home() {
       <div className="absolute inset-0 bg-ivory/60 backdrop-blur-[2px]"></div>
       {/* Centered content overlay */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-12 min-h-screen space-y-6">
-        <h1 className="text-5xl md:text-6xl font-serif text-brown drop-shadow-sm">Welcome to The Lash Burrow</h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto text-brown">
-          Nestled in a cozy corner, The Lash Burrow offers gentle, elegant lash extensions
-          and beauty treatments that make you feel at home.
+        <h1 className="text-5xl md:text-8xl font-serif text-brown drop-shadow-sm">The Lash Burrow</h1>
+        <p className="text-lg md:text-4xl max-w-5xl mx-auto text-brown">
+          Lashes & Brows
         </p>
         <a
           href="/booking"
@@ -26,6 +25,71 @@ export default function Home() {
         >
           Book an Appointment
         </a>
+      </section>
+      {/* --- Services Section --- */}
+      <section className="relative z-10 bg-ivory text-black py-12 px-8 md:px-16">
+        <div className="max-w-6xl mx-auto mb-16 text-center">
+          <h2 className="text-6xl md:text-7xl font-caveat text-black">Services</h2>
+        </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          {/* Lashes Column */}
+          <div className="space-y-6 text-center">
+            <div className="flex justify-center">
+              <Image
+                src="/images/lash.png"
+                alt="Lash icon"
+                width={160}
+                height={160}
+                className="object-contain drop-shadow-md"
+                priority
+              />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-caveat text-black">
+              Lashes
+            </h2>
+            <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
+              Enhance your natural beauty with our gentle lash extensions.
+              Whether you’re after a subtle lift or full-volume glam,
+              each set is customized to complement your eye shape and
+              personality—designed for comfort and effortless elegance.
+            </p>
+            <a
+              href="/services"
+              className="inline-block bg-moss text-ivory px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+            >
+              Explore Lash Services
+            </a>
+          </div>
+
+          {/* Brows Column */}
+          <div className="space-y-6 text-center">
+            <div className="flex justify-center">
+              <Image
+                src="/images/brow.png"
+                alt="Brow icon"
+                width={160}
+                height={160}
+                className="object-contain drop-shadow-md"
+                priority
+              />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-caveat text-black">
+              Brows
+            </h2>
+            <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
+              Shape and define your brows for a naturally polished look.
+              From brow lamination to precision tinting, our treatments
+              help frame your face and bring balance to your features—
+              perfect for every occasion.
+            </p>
+            <a
+              href="/services"
+              className="inline-block bg-moss text-ivory px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+            >
+              Explore Brow Services
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );

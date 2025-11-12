@@ -61,7 +61,7 @@ export default function RootLayout({
       >
         <Navbar />
         {/* Added top padding to prevent content from being hidden behind the fixed navbar */}
-        <main className="grow px-6 py-8 pt-20">{children}</main>
+        <main className="grow px-0 py-0 pt-16">{children}</main>
         <Footer />
       </body>
     </html>
