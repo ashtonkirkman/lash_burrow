@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* Left Section */}
         <div>
-          <h2 className="text-4xl text-ivory font-caveat mb-3">The Lash Burrow</h2>
+          <h2 className="text-3xl text-ivory font-fuzzy-bubbles mb-3">The Lash Burrow</h2>
           <p className="text-ivory leading-relaxed">
             210 N 200 W <br />
             Logan, UT 84321
@@ -28,7 +28,7 @@ export default function Footer() {
 
         {/* Center Section */}
         <div>
-          <h3 className="text-4xl text-ivory font-caveat mb-3">Hours</h3>
+          <h3 className="text-3xl text-ivory font-fuzzy-bubbles mb-3">Hours</h3>
           <ul className="space-y-2 text-ivory">
             <li>
               <span>Saturday:</span>
@@ -39,25 +39,25 @@ export default function Footer() {
 
         {/* Right Section */}
         <div>
-          <h3 className="text-4xl text-ivory font-caveat mb-3">Resources</h3>
+          <h3 className="text-3xl text-ivory font-fuzzy-bubbles mb-3">Resources</h3>
           <ul className="space-y-2 text-ivory">
             <li>
-              <Link href="/booking" className="hover:text-ivory transition-colors">
+              <Link href="/booking" className="hover:text-blush transition-colors">
                 Book an Appointment
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-ivory transition-colors">
+              <Link href="/services" className="hover:text-blush transition-colors">
                 Services &amp; Pricing
               </Link>
             </li>
             <li>
-              <Link href="/boutique" className="hover:text-ivory transition-colors">
+              <Link href="/boutique" className="hover:text-blush transition-colors">
                 Shop Boutique
               </Link>
             </li>
             <li>
-              <Link href="/giving" className="hover:text-ivory transition-colors">
+              <Link href="/giving" className="hover:text-blush transition-colors">
                 Giving Back
               </Link>
             </li>

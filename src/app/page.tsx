@@ -15,21 +15,22 @@ export default function Home() {
       <div className="absolute inset-0 bg-ivory/60 backdrop-blur-[2px] pointer-events-none"></div>
       {/* Centered content overlay */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-12 min-h-screen space-y-6">
-        <h1 className="text-5xl md:text-8xl font-serif text-brown drop-shadow-sm">The Lash Burrow</h1>
-        <p className="text-lg md:text-4xl max-w-5xl mx-auto text-brown">
+        <h1 className="text-3xl md:text-5xl font-fuzzy-bubbles text-brown drop-shadow-sm">The Lash Burrow</h1>
+        <p className="text-lg md:text-4xl max-w-5xl mx-auto text-brown font-butterfly-kids">
           Lashes & Brows
         </p>
         <a
           href="/booking"
-          className="bg-moss text-ivory px-8 py-4 rounded-full inline-block mt-2 hover:opacity-80 transition shadow-lg"
+          className="bg-moss text-ivory font-fuzzy-bubbles px-8 py-4 rounded-full inline-block mt-2 hover:opacity-80 transition shadow-lg"
         >
           Book an Appointment
         </a>
       </section>
       {/* --- Services Section --- */}
       <section className="relative z-10 bg-ivory text-black py-12 px-8 md:px-16">
+        {/* Background image */}
         <div className="max-w-6xl mx-auto mb-16 text-center">
-          <h2 className="text-6xl md:text-7xl font-caveat text-black">Services</h2>
+          <h2 className="text-6xl md:text-7xl font-fuzzy-bubbles text-black">Services</h2>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Lashes Column */}
@@ -44,7 +45,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <h2 className="text-4xl md:text-5xl font-caveat text-black">
+            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-black">
               Lashes
             </h2>
             <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
@@ -55,7 +56,7 @@ export default function Home() {
             </p>
             <a
               href="/services"
-              className="inline-block bg-moss text-ivory px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+              className="inline-block bg-moss text-ivory font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
             >
               Explore Lash Services
             </a>
@@ -73,7 +74,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <h2 className="text-4xl md:text-5xl font-caveat text-black">
+            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-black">
               Brows
             </h2>
             <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
@@ -84,7 +85,7 @@ export default function Home() {
             </p>
             <a
               href="/services"
-              className="inline-block bg-moss text-ivory px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+              className="inline-block bg-moss text-ivory font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
             >
               Explore Brow Services
             </a>

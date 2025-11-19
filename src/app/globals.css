@@ -23,6 +23,13 @@
   --font-meow: var(--font-meow);
   --font-delicious-handrawn: var(--font-delicious-handrawn);
   --font-caveat: var(--font-caveat);
+  --font-butterfly-kids: var(--font-butterfly-kids);
+  --font-send-flowers: var(--font-send-flowers);
+  --font-fuzzy-bubbles: var(--font-fuzzy-bubbles);
+  --font-indie-flower: var(--font-indie-flower);
+  --font-shadows-into-light: var(--font-shadows-into-light);
+  --font-shadows-into-light-two: var(--font-shadows-into-light-two);
+  --font-square-peg: var(--font-square-peg);
 }
 
 @media (prefers-color-scheme: dark) {

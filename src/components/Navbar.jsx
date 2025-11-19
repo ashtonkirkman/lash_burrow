@@ -31,17 +31,17 @@ export default function Navbar() {
         `}
       >
         <Link href="/" className="flex items-center gap-3 group">
-          <span className="text-2xl font-caveat text-brown group-hover:opacity-90 transition">The Lash Burrow</span>
+          <span className="text-2xl font-fuzzy-bubbles text-brown group-hover:opacity-90 transition">The Lash Burrow</span>
           <Image
             src="/images/logo.PNG"
             alt="The Lash Burrow logo"
-            width={48}
-            height={48}
+            width={120}
+            height={120}
             className="object-contain drop-shadow-sm"
             priority
           />
         </Link>
-        <div className="space-x-6 font-sans">
+        <div className="space-x-6 font-fuzzy-bubbles">
           <Link href="/about" className="hover:underline">
             About
           </Link>
