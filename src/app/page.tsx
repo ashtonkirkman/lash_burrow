@@ -5,14 +5,14 @@ export default function Home() {
     <div className="relative min-h-screen w-full">
       {/* Fullscreen background image */}
       <Image
-        src="/images/wheat.jpg"
+        src="/images/wheat_1_cropped.PNG"
         alt="Cozy wheat field background for The Lash Burrow"
         fill
         priority
-        className="object-cover"
+        className="object-cover pointer-events-none"
       />
       {/* Optional subtle overlay for readability */}
-      <div className="absolute inset-0 bg-ivory/60 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-ivory/60 backdrop-blur-[2px] pointer-events-none"></div>
       {/* Centered content overlay */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-12 min-h-screen space-y-6">
         <h1 className="text-5xl md:text-8xl font-serif text-brown drop-shadow-sm">The Lash Burrow</h1>
