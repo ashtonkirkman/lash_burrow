@@ -5,6 +5,7 @@ import { Dancing_Script } from "next/font/google";
 import { Meow_Script } from "next/font/google";
 import { Delicious_Handrawn } from "next/font/google";
 import { Caveat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const dancing = Dancing_Script({
@@ -12,6 +13,12 @@ const dancing = Dancing_Script({
   weight: ["400", "500", "600", "700"],
   variable: "--font-dancing",
 });
+
+const pregnant = localFont({
+  src: "../../public/fonts/Baletta.ttf",
+  variable: "--font-pregnant",
+  weight: "400",
+})
 
 const meow = Meow_Script({
   subsets: ["latin"],
@@ -89,7 +96,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dancing.variable} ${meow.variable} ${deliciousHandrawn.variable} ${caveat.variable} ${butterflyKids.variable} ${sendFlowers.variable} ${fuzzyBubbles.variable} ${indieFlower.variable} ${shadowsIntoLight.variable} ${shadowsIntoLightTwo.variable} ${squarePeg.variable} antialiased bg-primary text-brown`}
+        className={`${dancing.variable} ${pregnant.variable} ${meow.variable} ${deliciousHandrawn.variable} ${caveat.variable} ${butterflyKids.variable} ${sendFlowers.variable} ${fuzzyBubbles.variable} ${indieFlower.variable} ${shadowsIntoLight.variable} ${shadowsIntoLightTwo.variable} ${squarePeg.variable} antialiased bg-primary text-brown`}
       >
         <Navbar />
         {/* Added top padding to prevent content from being hidden behind the fixed navbar */}

@@ -20,6 +20,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-dancing: var(--font-dancing);
+  --font-pregnant: var(--font-pregnant);
   --font-meow: var(--font-meow);
   --font-delicious-handrawn: var(--font-delicious-handrawn);
   --font-caveat: var(--font-caveat);
@@ -37,6 +38,21 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom {
+  animation: zoomIn 0.25s ease-out;
 }
 
 body {

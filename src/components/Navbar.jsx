@@ -7,10 +7,9 @@ export default function Navbar() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const threshold = 50; // Distance to scroll before zooming header away
+    const threshold = 50;
 
     const handleScroll = () => {
-      console.log('window.scrollY:', window.scrollY);
       if (window.scrollY > threshold) {
         setHidden(true);
       } else {
@@ -24,7 +23,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Fixed Header */}
       <nav
         className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center py-4 px-6 bg-primary shadow-md transition-all duration-900 ease-in-out
           ${hidden ? "-translate-y-32 scale-100 opacity-100" : "translate-y-0 scale-100 opacity-100"}
@@ -48,12 +46,14 @@ export default function Navbar() {
           <Link href="/services" className="hover:underline">
             Services
           </Link>
-          <Link
-            href="/booking"
+          <a
+            href="https://cyns-lashes.square.site"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-blush text-white px-4 py-2 rounded-full shadow hover:opacity-90 transition"
           >
             Book Now
-          </Link>
+          </a>
         </div>
       </nav>
     </>
