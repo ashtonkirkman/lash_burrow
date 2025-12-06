@@ -6,7 +6,7 @@ import ServiceCard from "../../components/ServiceCard";
 import { useState } from "react";
 
 const lashServices = [
-  { name: "Classic Lash Set", price: "$90", description: "A natural, timeless enhancement for a soft everyday look.", image: "/services/hybrid.JPG" },
+  { name: "Classic Lash Set", price: "$90", description: "A natural, timeless enhancement for a soft everyday look.", image: "/services/classic.jpg" },
   { name: "Hybrid Lash Set", price: "$110", description: "A perfect mix of classic and volume lashes for added fullness.", image: "/services/hybrid.JPG" },
   { name: "Lash Fill", price: "$60", description: "Maintain your lash set with a refill of lashes to keep them looking fresh.", image: "/services/hybrid.JPG" },
   { name: "Lash Tint", price: "$16", description: "Darken your natural lashes for a mascara-like effect without the makeup.", image: "/services/hybrid.JPG" },
@@ -63,38 +63,38 @@ export default function ServicesPage() {
       </h1>
 
       {/* Lashes Section */}
-      <section className="w-full max-w-6xl text-center space-y-10">
+      <section className="w-full max-w-7xl text-center space-y-10">
         <h2 className="text-5xl font-fuzzy-bubbles text-brown">Lashes</h2>
 
-        {/* Lash Service Buttons */}
-        <div className="grid gap-8 md:grid-cols-4">
-          {lashServices.map((service) => (
-            <button
+        {/* 3 Lash Boxes in a Row (larger boxes + more spacing) */}
+        <div className="grid gap-12 md:grid-cols-3">
+          {[
+            { name: "Classic Lash Set", price: "$90", description: "A natural, timeless enhancement for a soft everyday look.", image: "/services/classic.jpg" },
+            { name: "Hybrid Lash Set", price: "$110", description: "A mix of classic + volume for added fullness.", image: "/services/hybrid.JPG" },
+            { name: "Lash Fill", price: "$60", description: "A refill to keep your lashes looking fresh and full.", image: "/services/hybrid_6.JPG" }
+          ].map((service) => (
+            <div 
               key={service.name}
+              className="bg-blush/20 rounded-2xl shadow-md p-10 hover:scale-[1.03] transition-transform cursor-pointer flex flex-col items-center w-full space-y-5"
               onClick={() => setSelectedImage(service.image)}
-              className="bg-blush/20 p-8 rounded-2xl shadow-sm text-left hover:scale-105 transition-transform"
             >
-              <h3 className="text-3xl font-fuzzy-bubbles mb-2">{service.name}</h3>
-              <p className="text-lg text-brown/80">{service.description}</p>
-            </button>
+              <Image 
+                src={service.image}
+                alt={service.name}
+                width={600}
+                height={400}
+                className="rounded-xl object-cover h-72 w-full"
+              />
+
+              <h3 className="text-3xl font-fuzzy-bubbles">{service.name}</h3>
+              <p className="text-2xl font-semibold text-brown">{service.price}</p>
+              <p className="text-lg text-brown/80 max-w-md">{service.description}</p>
+            </div>
           ))}
         </div>
-
-        {/* Pricing Table */}
-        <div className="mt-16 w-full max-w-3xl mx-auto">
-          <h3 className="text-4xl font-fuzzy-bubbles text-brown mb-6">Pricing</h3>
-          <table className="w-full text-left text-lg border-collapse">
-            <tbody>
-              {lashPricing.map((item, index) => (
-                <tr key={index} className="border-none">
-                  <td className="py-3">{item.service}</td>
-                  <td className="py-3 text-right font-semibold">{item.price}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </section>
+
+
 
       {/* Brows */}
       <section className="w-full max-w-6xl text-center space-y-10">

@@ -29,19 +29,19 @@ export default function Home() {
         </a>
       </section>
       {/* --- Services Section --- */}
-      <section className="relative z-10 bg-ivory text-black py-12 px-8 md:px-16">
+      <section className="relative z-10 bg-ivory text-brown py-12 px-8 md:px-16">
         <div className="max-w-6xl mx-auto mb-16 text-center">
-          <h2 className="text-6xl md:text-7xl font-fuzzy-bubbles text-black">Services</h2>
+          <h2 className="text-6xl md:text-7xl font-fuzzy-bubbles text-brown">Services</h2>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Lashes Column */}
           <div className="space-y-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-black">
+            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-brown">
               Lashes
             </h2>
-            <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
+            <p className="text-lg md:text-xl text-brown leading-relaxed mx-auto">
               Enhance your natural beauty with our gentle lash extensions.
-              Whether you’re after a subtle lift or full-volume glam,
+              Whether you’re after a subtle lift or hybrid glam,
               each set is customized to complement your eye shape and
               personality—designed for comfort and effortless elegance.
             </p>
@@ -55,10 +55,10 @@ export default function Home() {
 
           {/* Brows Column */}
           <div className="space-y-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-black">
+            <h2 className="text-4xl md:text-5xl font-fuzzy-bubbles text-brown">
               Brows
             </h2>
-            <p className="text-lg md:text-xl text-black leading-relaxed mx-auto">
+            <p className="text-lg md:text-xl text-brown leading-relaxed mx-auto">
               Shape and define your brows for a naturally polished look.
               From brow lamination to precision tinting, our treatments
               help frame your face and bring balance to your features—
@@ -73,6 +73,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+    
+
+      {/* Our Team Section */}
+      <section className="relative z-10 w-full text-center pt-12">
+
+        {/* Background ribbon */}
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/images/wallpaper_2.png"
+            alt="Background wallpaper"
+            fill
+            unoptimized
+            className="object-cover"
+          />
+        </div>
+
+        <h2 className="text-7xl font-fuzzy-bubbles text-ivory mb-0">
+          Our Team
+        </h2>
+
+        <div className="flex flex-col md:flex-row justify-center gap-12 py-8">
+          <div className="bg-ivory rounded-2xl shadow-md p-4 flex flex-col items-center w-full max-w-xl">
+            
+            <Image 
+              src="/bunnies/technician.jpg"
+              alt="Lash Technician"
+              width={800}
+              height={800}
+              unoptimized
+              className="rounded-2xl object-cover h-90 w-full"
+            />
+
+            <h3 className="text-3xl font-fuzzy-bubbles mt-8 text-brown">
+              Cynthia Kirkman
+            </h3>
+
+            <p className="text-lg text-brown/70 mt-1">
+              Lead Esthetician
+            </p>
+
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
