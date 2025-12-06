@@ -94,15 +94,15 @@ export default function Home() {
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center gap-12 py-8">
-          <div className="bg-ivory rounded-2xl shadow-md p-4 flex flex-col items-center w-full max-w-xl">
+          <div className="bg-ivory rounded-2xl shadow-md p-6 flex flex-col items-center w-full max-w-xl">
             
             <Image 
-              src="/bunnies/technician.jpg"
+              src="/bunnies/technician_1.jpg"
               alt="Lash Technician"
               width={800}
               height={800}
               unoptimized
-              className="rounded-2xl object-cover h-90 w-full"
+              className="rounded-2xl object-cover h-120 w-full"
             />
 
             <h3 className="text-3xl font-fuzzy-bubbles mt-8 text-brown">
