@@ -9,6 +9,8 @@
   --color-primary: #fbf0e7;
 }
 
+@custom-variant hover (&:hover);
+
 @tailwind utilities;
 
 :root {
