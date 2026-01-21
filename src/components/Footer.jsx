@@ -42,9 +42,14 @@ export default function Footer() {
           <h3 className="text-3xl text-ivory font-fuzzy-bubbles mb-3">Resources</h3>
           <ul className="space-y-2 text-ivory">
             <li>
-              <Link href="/booking" className="hover:text-blush transition-colors">
+              <a
+                href="https://cyns-lashes.square.site"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blush transition-colors"
+              >
                 Book an Appointment
-              </Link>
+              </a>
             </li>
             <li>
               <Link href="/services" className="hover:text-blush transition-colors">
@@ -52,13 +57,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/boutique" className="hover:text-blush transition-colors">
-                Shop Boutique
-              </Link>
-            </li>
-            <li>
-              <Link href="/giving" className="hover:text-blush transition-colors">
-                Giving Back
+              <Link href="/about" className="hover:text-blush transition-colors">
+                About
               </Link>
             </li>
           </ul>

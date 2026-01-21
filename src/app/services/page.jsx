@@ -6,11 +6,11 @@ import ServiceCard from "../../components/ServiceCard";
 import { useState } from "react";
 
 const lashServices = [
-  { name: "Classic Lash Set", price: "$85", time: "2 hours", description: "A natural, timeless enhancement for a soft everyday look", image: "/services/classic.jpg" },
+  { name: "Classic Lash Set", price: "$85", time: "2 hours", description: "A natural, timeless enhancement for a soft everyday look", image: "/services/classic_2.jpeg" },
   { name: "Hybrid Lash Set", price: "$115", time: "3 hours", description: "A mix of classic + volume for added fullness", image: "/services/hybrid.JPG" },
-  { name: "Classic Fill", price: "$50", time: "1 hour", description: "A refill to keep your lashes looking fresh and full", image: "/services/hybrid_9.jpg" },
+  { name: "Classic Fill", price: "$50", time: "1 hour", description: "A refill to keep your lashes looking fresh and full", image: "/services/classic_3.jpeg" },
   { name: "Hybrid Fill", price: "$65", time: "1.5 hours", description: "A refill to maintain the perfect blend of classic and volume", image: "/services/hybrid_4.jpg" },
-  { name: "Lash Lift & Tint", price: "$55", time: "1 hour", description: "A semi-permanent curl to enhance your natural lashes", image: "/services/hybrid_6.jpg" },
+  { name: "Lash Lift & Tint", price: "$55", time: "1 hour", description: "A semi-permanent curl to enhance your natural lashes", image: "/services/lash_lift.jpeg" },
   { name: "Lash Removal", price: "$25", time: "30 minutes", description: "Gentle removal of lash extensions to protect your natural lashes", image: "/services/hybrid_6.jpg" },
 ];
 
