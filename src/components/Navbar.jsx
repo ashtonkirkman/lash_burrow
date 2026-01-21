@@ -31,6 +31,7 @@ export default function Navbar() {
           bg-primary shadow-md transition-all duration-900 ease-in-out
           ${hidden ? "-translate-y-32" : "translate-y-0"}
           px-6 py-3 md:py-4
+          relative
         `}
       >
         {/* Logo */}
@@ -71,24 +72,24 @@ export default function Navbar() {
           <span className="w-6 h-0.5 bg-black"></span>
           <span className="w-6 h-0.5 bg-black"></span>
         </button>
-      </nav>
 
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-primary flex flex-col items-center gap-4 py-4 shadow-md font-fuzzy-bubbles z-40">
-          <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
-          <Link href="/services" onClick={() => setMobileOpen(false)}>Services</Link>
-          <a
-            href="https://cyns-lashes.square.site"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blush text-white px-4 py-2 rounded-full shadow"
-            onClick={() => setMobileOpen(false)}
-          >
-            Book Now
-          </a>
-        </div>
-      )}
+        {/* Mobile Menu */}
+        {mobileOpen && (
+          <div className="md:hidden absolute left-0 w-full bg-primary flex flex-col items-center gap-4 py-3 shadow-md font-fuzzy-bubbles z-40 top-[100%]">
+            <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/services" onClick={() => setMobileOpen(false)}>Services</Link>
+            <a
+              href="https://cyns-lashes.square.site"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blush text-white px-4 py-2 rounded-full shadow"
+              onClick={() => setMobileOpen(false)}
+            >
+              Book Now
+            </a>
+          </div>
+        )}
+      </nav>
     </>
   );
 }
