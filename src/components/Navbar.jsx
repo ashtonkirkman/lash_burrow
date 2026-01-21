@@ -27,13 +27,17 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center py-4 px-6 bg-primary shadow-md transition-all duration-900 ease-in-out
-          ${hidden ? "-translate-y-32 scale-100 opacity-100" : "translate-y-0 scale-100 opacity-100"}
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center
+          bg-primary shadow-md transition-all duration-900 ease-in-out
+          ${hidden ? "-translate-y-32" : "translate-y-0"}
+          px-6 py-3 md:py-4
         `}
       >
-        {/* Logo Section */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <span className="text-2xl font-fuzzy-bubbles text-brown group-hover:opacity-90 transition">The Lash Burrow</span>
+          <span className="text-2xl font-fuzzy-bubbles text-brown group-hover:opacity-90 transition">
+            The Lash Burrow
+          </span>
           <Image
             src="/images/logo.PNG"
             alt="The Lash Burrow logo"
@@ -46,12 +50,8 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 font-fuzzy-bubbles items-center">
-          <Link href="/about" className="hover:underline py-2">
-            About
-          </Link>
-          <Link href="/services" className="hover:underline py-2">
-            Services
-          </Link>
+          <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/services" className="hover:underline">Services</Link>
           <a
             href="https://cyns-lashes.square.site"
             target="_blank"
@@ -62,8 +62,7 @@ export default function Navbar() {
           </a>
         </div>
 
-
-        {/* Hamburger Button - Mobile */}
+        {/* Hamburger */}
         <button
           className="md:hidden flex flex-col gap-1"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -74,8 +73,9 @@ export default function Navbar() {
         </button>
       </nav>
 
+      {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-20 right-0 bg-primary w-full flex flex-col items-center gap-4 py-4 shadow-md font-fuzzy-bubbles z-40">
+        <div className="md:hidden absolute top-full left-0 w-full bg-primary flex flex-col items-center gap-4 py-4 shadow-md font-fuzzy-bubbles z-40">
           <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
           <Link href="/services" onClick={() => setMobileOpen(false)}>Services</Link>
           <a
