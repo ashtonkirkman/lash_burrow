@@ -9,6 +9,8 @@
   --color-primary: #fbf0e7;
 }
 
+@tailwind utilities;
+
 :root {
   --background: var(--color-primary);
   --foreground: var(--color-brown);
