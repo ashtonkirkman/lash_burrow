@@ -31,7 +31,6 @@ export default function Navbar() {
           bg-primary shadow-md transition-all duration-900 ease-in-out
           ${hidden ? "-translate-y-32" : "translate-y-0"}
           px-6 py-3 md:py-4
-          relative
         `}
       >
         {/* Logo */}
