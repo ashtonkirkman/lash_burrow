@@ -30,11 +30,11 @@ export default function Navbar() {
         className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center
           bg-primary shadow-md transition-all duration-900 ease-in-out
           ${hidden ? "-translate-y-32" : "translate-y-0"}
-          px-6 py-3 md:py-4
+          px-6 pt-3 pb-0 md:pt-4 md:pb-0
         `}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group self-end">
           <span className="text-2xl font-fuzzy-bubbles text-brown group-hover:opacity-90 transition">
             The Lash Burrow
           </span>
