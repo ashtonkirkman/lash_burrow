@@ -18,7 +18,7 @@ const lashServices = [
 const browServices = [
   { name: "Brow Shaping", price: "$15", time: "25 minutes", description: "Precision shaping for clean, natural definition", image: "/services/brow_1.jpg" },
   { name: "Brow Lamination & Tint", price: "$45", time: "45 minutes", description: "Lift and set brows for a fuller, fluffy look", image: "/services/brow_6_crop.jpg" },
-  { name: "Brow Tint", price: "$20", time: "25 minutes", description: "Add depth and color for face-framing balance", image: "/services/brow_3.jpg" },
+  { name: "Brow Tint", price: "$10", time: "25 minutes", description: "Add depth and color for face-framing balance", image: "/services/brow_3.jpg" },
 ];
 
 // Added wax services (interpreting 'wasServices' as 'waxServices')
