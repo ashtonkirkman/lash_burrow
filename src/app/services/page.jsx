@@ -10,14 +10,14 @@ const lashServices = [
   { name: "Hybrid Lash Set", price: "$115", time: "3 hours", description: "A mix of classic + volume for added fullness", image: "/services/hybrid.JPG" },
   { name: "Classic Fill", price: "$50", time: "1 hour", description: "A refill to keep your lashes looking fresh and full", image: "/services/classic_3.jpeg" },
   { name: "Hybrid Fill", price: "$65", time: "1.5 hours", description: "A refill to maintain the perfect blend of classic and volume", image: "/services/hybrid_4.jpg" },
-  { name: "Lash Lift & Tint", price: "$55", time: "1 hour", description: "A semi-permanent curl to enhance your natural lashes", image: "/services/lash_lift.jpeg" },
+  { name: "Lash Lift & Tint", price: "$45", time: "1 hour", description: "A semi-permanent curl to enhance your natural lashes", image: "/services/lash_lift.jpeg" },
   { name: "Lash Removal", price: "$25", time: "30 minutes", description: "Gentle removal of lash extensions to protect your natural lashes", image: "/services/hybrid_6.jpg" },
 ];
 
 // Added brow services (user requested browServices)
 const browServices = [
   { name: "Brow Shaping", price: "$15", time: "25 minutes", description: "Precision shaping for clean, natural definition", image: "/services/brow_1.jpg" },
-  { name: "Brow Lamination", price: "$55", time: "45 minutes", description: "Lift and set brows for a fuller, fluffy look", image: "/services/brow_6_crop.jpg" },
+  { name: "Brow Lamination & Tint", price: "$45", time: "45 minutes", description: "Lift and set brows for a fuller, fluffy look", image: "/services/brow_6_crop.jpg" },
   { name: "Brow Tint", price: "$20", time: "25 minutes", description: "Add depth and color for face-framing balance", image: "/services/brow_3.jpg" },
 ];
 
