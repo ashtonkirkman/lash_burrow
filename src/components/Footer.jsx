@@ -30,9 +30,33 @@ export default function Footer() {
         <div>
           <h3 className="text-3xl text-ivory font-fuzzy-bubbles mb-3">Hours</h3>
           <ul className="space-y-2 text-ivory">
-            <li>
-              <span>Saturday:</span>
-              <span className="ml-6">8am – 8pm</span>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Monday:</span>
+              <span>Closed</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Tuesday:</span>
+              <span>Closed</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Wednesday:</span>
+              <span>5pm - 9pm</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Thursday:</span>
+              <span>Closed</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Friday:</span>
+              <span>Closed</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Saturday:</span>
+              <span>8am - 8pm</span>
+            </li>
+            <li className="flex items-baseline">
+              <span className="inline-block w-28">Sunday:</span>
+              <span>Closed</span>
             </li>
           </ul>
         </div>
