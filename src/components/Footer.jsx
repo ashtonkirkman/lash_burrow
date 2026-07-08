@@ -32,11 +32,11 @@ export default function Footer() {
           <ul className="space-y-2 text-ivory">
             <li className="flex items-baseline">
               <span className="inline-block w-28">Monday:</span>
-              <span>Closed</span>
+              <span>5pm - 9pm</span>
             </li>
             <li className="flex items-baseline">
               <span className="inline-block w-28">Tuesday:</span>
-              <span>Closed</span>
+              <span>5pm - 9pm</span>
             </li>
             <li className="flex items-baseline">
               <span className="inline-block w-28">Wednesday:</span>
@@ -44,11 +44,11 @@ export default function Footer() {
             </li>
             <li className="flex items-baseline">
               <span className="inline-block w-28">Thursday:</span>
-              <span>Closed</span>
+              <span>5pm - 9pm</span>
             </li>
             <li className="flex items-baseline">
               <span className="inline-block w-28">Friday:</span>
-              <span>Closed</span>
+              <span>5pm - 9pm</span>
             </li>
             <li className="flex items-baseline">
               <span className="inline-block w-28">Saturday:</span>

@@ -23,7 +23,7 @@ export default function Home() {
           href="https://cyns-lashes.square.site"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-moss text-ivory font-fuzzy-bubbles px-8 py-4 rounded-full inline-block mt-2 hover:opacity-80 transition shadow-lg"
+          className="bg-blush text-white font-fuzzy-bubbles px-8 py-4 rounded-full inline-block mt-2 hover:opacity-80 transition shadow-lg"
         >
           Book an Appointment
         </a>
@@ -47,7 +47,7 @@ export default function Home() {
             </p>
             <a
               href="/services"
-              className="inline-block bg-moss text-ivory font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+              className="inline-block bg-blush text-white font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
             >
               Explore Lash Services
             </a>
@@ -66,7 +66,7 @@ export default function Home() {
             </p>
             <a
               href="/services"
-              className="inline-block bg-moss text-ivory font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
+              className="inline-block bg-blush text-white font-fuzzy-bubbles px-6 py-3 rounded-full hover:opacity-85 transition shadow-md"
             >
               Explore Brow Services
             </a>
